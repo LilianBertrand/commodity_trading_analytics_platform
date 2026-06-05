@@ -63,26 +63,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Run the dashboard
+## Live Demo
 
-```bash
-streamlit run dashboard/app.py
-```
+https://commoditytradinganalyticsplatform-gy5qqdasyqdp5ekyfiauhd.streamlit.app/
 
-or:
-
-```bash
-python run_app.py
-```
-
-## Suggested CV bullet
-
-Built a Python/Streamlit Commodity Trading Desk Dashboard for market monitoring, futures curve analytics, physical hedging, VaR, stress testing, Black-76 options Greeks, Brent/WTI spread monitoring, SQLite storage and ML-based anomaly detection.
-
-## Interview pitch
-
-> I built a Python-based commodity trading desk dashboard focused on market monitoring, futures curve analytics, physical hedging and risk management. It classifies contango/backwardation, computes roll yield and implied convenience yield, simulates physical hedge effectiveness, monitors VaR/stress scenarios, tracks Brent/WTI relative-value moves, prices commodity options with Black-76 Greeks, and exports results to Excel/SQLite.
-
-## Professional limitation
-
-The project uses public `yfinance` data for demonstration. In a professional desk environment, the market-data layer should be connected to Bloomberg, Refinitiv, ICE/CME or internal official marks. The current design is modular so that the public-data loader can be replaced without rewriting the analytics layer.
